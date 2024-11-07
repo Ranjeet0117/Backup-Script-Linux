@@ -1,10 +1,12 @@
 # Backup-Script-Linux
+# enter the code root mode 
 cd /home/ranjeet/Desktop
 ls
 touch /home/ranjeet/Desktop/backup_prd.sh
 vi /home/ranjeet/Desktop/backup_prd.sh
 
-#enter the code
+# go to backup_prd.sh file and save the code 
+# enter the code
 
 #!/bin/bash
 
@@ -41,14 +43,14 @@ if [ $? -eq 0 ]; then
 else
     echo "Backup failed!"
 fi
-
-#exit the file
+# save the file and exit the backup_prd.sh file
+# exit the file
 
 chmod +x /home/ranjeet/Desktop/backup_prd.sh
 cd /home/ranjeet/Desktop
 ./backup_prd.sh
 sudo ./backup_prd.sh
-ls /home/ranjeet/backups
+ls /home/ranjeet/backups     
 
 
 
